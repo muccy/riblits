@@ -1,6 +1,5 @@
 class MyApp < Sinatra::Application
 	get "/" do
-		@title = "Welcome to MyApp"				
-		haml :main
+    "Hello World"
 	end
 end
