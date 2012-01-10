@@ -1,4 +1,5 @@
 require 'sinatra'
+require "sinatra/reloader"
 
 class MyApp < Sinatra::Application
 	enable :sessions
@@ -8,7 +9,9 @@ class MyApp < Sinatra::Application
 	end
 
 	configure :development do
-    # ...
+    register Sinatra::Reloader
+    # also_reload '/path/to/some/file'
+    # dont_reload '/path/to/other/file'
 	end
 
 	helpers do
