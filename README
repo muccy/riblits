@@ -1,0 +1,4 @@
+This is a basic Monk skeleton for Sinatra.
+
+Please remember to launch this app via config.ru:
+$ rackup -p 4567
