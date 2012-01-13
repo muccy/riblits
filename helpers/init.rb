@@ -1,1 +1,1 @@
-# require_relative 'my_helper'
+require_relative 'partials'

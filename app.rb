@@ -8,6 +8,7 @@ class MyApp < Sinatra::Application
 
 	configure :development do
     register Sinatra::Reloader
+    also_reload 'helpers/*.rb'
     also_reload 'models/*.rb'
     # dont_reload '/path/to/other/file'
 	end
