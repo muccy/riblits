@@ -1,3 +1,5 @@
+require "rubygems"
+require "bundler/setup"
 require 'sinatra'
 require "sinatra/reloader"
 
@@ -7,10 +9,10 @@ class MyApp < Sinatra::Application
 	end
 
 	configure :development do
-    register Sinatra::Reloader
-    also_reload 'helpers/*.rb'
-    also_reload 'models/*.rb'
-    # dont_reload '/path/to/other/file'
+	    register Sinatra::Reloader
+	    also_reload 'helpers/*.rb'
+	    also_reload 'models/*.rb'
+	    # dont_reload '/path/to/other/file'
 	end
 
 	helpers do
