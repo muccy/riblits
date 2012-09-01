@@ -2,3 +2,10 @@ This is a basic Monk skeleton for Sinatra.
 
 Please remember to launch this app via config.ru:
 $ rackup -p 4567
+
+Init a project:
+# Before creating your project
+monk add riblits git://github.com/muccy/riblits.git
+
+# Inside your empty project directory
+monk init -s riblits
