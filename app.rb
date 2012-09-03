@@ -1,11 +1,17 @@
 # encoding: UTF-8
 
 require "rubygems"
-require "bundler/setup"
+require 'bundler/setup'
 require 'sinatra'
-require "sinatra/reloader"
+require 'sinatra/reloader'
+require 'sinatra/partial'
 
 class MyApp < Sinatra::Application
+	configure do
+		register Sinatra::Partial
+		set :partial_template_engine, :erb
+	end
+	
 	configure :production do
 		set :clean_trace, true
 	end

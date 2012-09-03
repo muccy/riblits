@@ -1,3 +1,3 @@
 # encoding: UTF-8
 
-require_relative 'partials'
+# require_relative 'my_helper'
