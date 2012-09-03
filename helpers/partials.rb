@@ -1,7 +1,19 @@
 # encoding: utf-8
 
 # Copied from: https://gist.github.com/119874
-# See also: http://www.sinatrarb.com/faq.html#partials
+#
+# Usage: http://www.sinatrarb.com/faq.html#partial
+#
+# Example:
+#   <%= partial(:mypartial) %>
+#   <%= partial(:'admin/mypartial') %>
+#     The partial will be rendered plain from their files, 
+#     with no local variables (specify them with a hash passed into :locals)
+#
+#   <%= partial(:object, :collection => @objects) %>
+#   <%= partial(:'admin/object', :collection => @objects) %>
+#     Partials will be rendered, populating the local variable object 
+#     with each of the objects from the collection.
 module Sinatra::Partials
   def partial(template, *args)
     template_array = template.to_s.split('/')
