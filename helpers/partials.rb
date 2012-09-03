@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 # Copied from: https://gist.github.com/119874
 # See also: http://www.sinatrarb.com/faq.html#partials
 module Sinatra::Partials
