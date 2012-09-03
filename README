@@ -1,7 +1,7 @@
 This is a basic Monk skeleton for Sinatra.
 
 Please remember to launch this app via config.ru:
-$ bundle exec rackup -p 4567
+$ bundle exec thin -p 4567 -R config.ru start
 
 You will find your running app at:
 http://127.0.0.1:4567
